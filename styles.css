@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-full {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container-horizontal {
+  width: 100%;
+  height: 65%;
+  background-color: #b22222;
+}
+
+.container-caixa {
+  position: absolute;
+  right: 4%;
+  width: 40%;
+  height: 75%;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px rgb(112, 110, 110);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-contato {
+  width: 50%;
+  /* border: solid; */
+  margin: 5%;
+}
+
+.box-contato h3,
+p {
+  margin: 5px;
+  color: white;
+}
+
+i.fa-solid.fa-phone,
+i.fa-solid.fa-location-dot,
+i.fa-solid.fa-clock {
+  margin-right: 2%;
+}
+
+.input-box input,
+textarea,
+h1 {
+  /* border: solid; */
+  width: 100%;
+  margin: 14px 0px;
+}
+
+.container-caixa form {
+  /* border: solid; */
+  width: 80%;
+}
+.container-caixa form h1 {
+  font-weight: bolder;
+}
+
+.input-box input,
+textarea {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 6px;
+}
+
+.input-box button {
+  border: 2px solid black;
+  color: black;
+  padding: 10px 30px;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-caixa {
+    position: relative;
+    width: 100%;
+    right: 0;
+  }
+  .container-full {
+    flex-direction: column;
+  }
+  .box-contato {
+    width: 93%;
+    margin: 10%;
+  }
+}
